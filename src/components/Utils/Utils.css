@@ -1,0 +1,30 @@
+.Search_text,
+.Form_control,
+.Textarea {
+  border: 1px solid rgb(240, 240, 240);
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: left;
+  width: 50%;
+  border-radius: 4px;
+}
+
+.Form_control::placeholder,
+.Textarea::placeholder {
+  color: #ccc;
+}
+
+.Textarea {
+  resize: vertical;
+}
+
+button {
+  order: 1px solid #aaa;
+  background-color: #eee;
+  font-size: 1.1em;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: bold;
+}

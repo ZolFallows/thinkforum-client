@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "alias": "thinkfulforum",
+    "name": "thinkfulforum-app",
+    "routes": [
+        {
+          "src": "^/static/(.*)",
+          "dest": "/static/$1"
+        },
+        {
+          "src": ".*",
+          "dest": "/index.html"
+        }
+    ]
+  }

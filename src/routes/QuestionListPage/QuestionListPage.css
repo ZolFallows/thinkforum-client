@@ -1,0 +1,10 @@
+.QuestionListPage {
+    border: 1px solid grey;
+    margin: 20px 0;
+}
+
+.List_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
