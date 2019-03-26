@@ -10,7 +10,7 @@ const QuestionListContext = React.createContext({
     setError: () => {},
     clearError: () => {},
     setSearchTerm: () => {},
-    setShowSearchBar: () => {}
+    setShowSearchBar: () => {},
 })
 
 export default QuestionListContext
@@ -51,6 +51,7 @@ export class QuestionListProvider extends Component {
         this.setState({questionList: newQuestionList})
     }
 
+
     render(){
         const contextValue = {
             questionList: this.state.questionList,
@@ -63,7 +64,7 @@ export class QuestionListProvider extends Component {
             setError: this.setError,
             clearError: this.clearError,
             setSearchTerm: this.setSearchTerm,
-            setShowSearchBar: this.setShowSearchBar
+            setShowSearchBar: this.setShowSearchBar,
         }
         return (
             <QuestionListContext.Provider value={contextValue}>

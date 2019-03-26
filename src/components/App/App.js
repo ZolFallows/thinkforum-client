@@ -9,6 +9,7 @@ import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
 
 import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import QuestionListPage from '../../routes/QuestionListPage/QuestionListPage'
 import SigninPage from '../../routes/SigninPage/SigninPage'
 import SignupPage from '../../routes/SignupPage/SignupPage'
@@ -76,6 +77,9 @@ class App extends Component {
             <PrivateRoute path={'/edit/:userId'} component={EditUserPage} />
           </Switch>
         </main>
+        <footer className="App_footer">
+          <Footer />
+        </footer>
 
       </div>
     );

@@ -88,7 +88,7 @@ export default class SignupForm extends Component {
                 <Button
                     title='Submit' 
                     type='submit'
-                    className='Submit_btn' 
+                    className='Signup_btn' 
                 />
             </form>
         )

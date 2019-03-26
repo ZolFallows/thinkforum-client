@@ -10,7 +10,7 @@ export default class AddQuestionPage extends Component {
 
     render(){
         return (
-            <section className="Container_form">
+            <section className="Container_question_form">
                 <QuestionForm onAddQuestionValid={this.handleAddQuestionValid}/>
             </section>
         )

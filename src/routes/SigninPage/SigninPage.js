@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import SigninForm from '../../components/SigninForm/SigninForm'
-
+import './SigninPage.css'
 export default class SigninPage extends Component {
     
     handleSigninValid = () => {

@@ -51,9 +51,9 @@ export default class SigninForm extends Component {
                     placeholder={"Password..."}
                 />
                 <Button
-                    title='Submit' 
+                    title='Sign In' 
                     type='submit'
-                    className='Submit_btn' 
+                    className='Signin_btn' 
                 />
             </form>
         )

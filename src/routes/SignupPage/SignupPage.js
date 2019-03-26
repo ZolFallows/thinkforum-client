@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import SignupForm from '../../components/SignupForm/SignupForm'
-
-export default class SigninPage extends Component {
+import './SignupPage.css'
+export default class SignupPage extends Component {
     
     handleSignupValid = () => {
         this.props.history.push('/')
@@ -10,7 +10,7 @@ export default class SigninPage extends Component {
     render(){
         return (
             <section className="Container_form">
-                <h2>Sign Up</h2>
+                <h2>Create a new account</h2>
                 <SignupForm onSignupValid={this.handleSignupValid}/>
             </section>
         )

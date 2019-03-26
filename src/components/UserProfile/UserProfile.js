@@ -9,7 +9,16 @@ export default class UserProfile extends Component {
     static contextType = UserContext
 
     componentDidMount(){
-        const { userId } = this.props
+        this.fetchUser(this.props.userId)
+    }
+
+    componentDidUpdate(prevProps){
+        if (this.props.userId !== prevProps.userId) {
+            this.fetchUser(this.props.userId);
+          }
+    }
+
+    fetchUser = (userId) =>{
         this.context.clearError()
         UsersApiService
             .getUserById(userId)
@@ -18,6 +27,7 @@ export default class UserProfile extends Component {
     }
 
     render(){
+        // console.log(this.props.userId)
         const { user, error } = this.context
         const payload = TokenService.readJwtToken()
         let content
@@ -29,23 +39,24 @@ export default class UserProfile extends Component {
                 content = <div className="loading"></div>
             } else {
                 content =   <>
-                                <div>
-                                    <h2>{user.full_name}{' - '}{user.user_name}</h2>
+                                <div className="wrapper">
+                                    <h2>{user.full_name}</h2>
+                                    <p className="date_created">Since&#32;&#32;&#32;<Moment format="D MMM YYYY" withTitle>{user.date_created}</Moment></p>
+                                </div>
+                                <div className="user_detail">
                                     {user.title && <h3>{user.title}</h3>}
-                                    <p>Location: {user.location? user.location : ``}</p>
+                                    {user.location? <p>Location: {user.location}</p> : <p className="blank">Your location is currently blank</p>}
+                                    {user.content? <p>{user.content}</p> : <p className="blank">Your about me is currently blank</p>}
                                 </div>
-                                <div>
-                                    {user.content? <p>{user.content}</p> : <p>Your about me is currently blank</p>}
+                                <div className="edit">
+                                    {user.id === payload.user_id && 
+                                        <Link to={`/edit/${user.id}`} className="edit_link">
+                                            Click here to edit
+                                        </Link>
+                                    }
+                                    
                                 </div>
-                                
-                                {user.id === payload.user_id && 
-                                    <Link to={`/edit/${user.id}`}>
-                                        Click here to edit
-                                    </Link>
-                                }
-                                <div>
-                                    <span>Since <Moment format="D MMM YYYY" withTitle>{user.date_created}</Moment></span> 
-                                </div>               
+              
                             </>
             }
         return <>{content}</>

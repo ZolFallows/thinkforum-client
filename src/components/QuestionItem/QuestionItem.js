@@ -17,14 +17,13 @@ export default class QuestionItem extends Component {
     render() {
         const { question } = this.props
         // console.log(question)
+        // const content = parse(this.converter.makeHtml(question.content)).find(img => )
         return (
-            <>
+            <div className="Question_box">
                 <div className="User">
-                    <h5>
-                        <span><Link to={`/user/${question.user.id}`}>{question.user.full_name}</Link></span> 
-                        {' - '} 
-                        <span>{question.user.user_name}</span>
-                    </h5>
+                    <h3>
+                        <Link to={`/user/${question.user.id}`}>{question.user.full_name}</Link>
+                    </h3>
                 </div>
                 <div className="Question_item">
                     <h3>{question.title}</h3>
@@ -35,14 +34,15 @@ export default class QuestionItem extends Component {
                         <div className="Tags">
                             {question.tags.split(',').map(tag => <span key={tag} className="tag">{tag} </span>)}
                         </div>
-                        <div>
+                        <div className="date_number">
                             <p className="Posted_date"><Moment fromNow>{question.date_created}</Moment></p>
-                            <p className="Answer_number">{question.number_of_answers} respond(s)</p>  
+                            &nbsp;&nbsp;&nbsp;
+                            <p className="Answer_number">{question.number_of_answers}&nbsp;respond(s)</p>  
                         </div>
                         
                     </div>
                 </div>
-            </>
+            </div>
 
         )
     }

@@ -1,5 +1,54 @@
 
-
 .Question_group {
-    border-top: 1px solid grey;
+    border-top: 1px solid #ececec;
+    padding: 10px 10px 20px 10px;
+}
+
+.delete_btn {
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 1px solid #ececec;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete_btn:hover, .delete_btn:focus{
+    background: #f8f8f8;
+    transition: ease-out 0.5s;
+}
+
+.Question_group h3,
+.Question_group h3 a  {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.discussion_info {
+    padding-top: 4px;
+    font-size: 0.7rem;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tag {
+    background: #ececec;
+    padding: 1.5px 3px 4px 5px;
+    margin: 2px;
+    border-radius: 2px;
+}
+.user_name {
+    color: gray;
+}
+
+.user_name a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
 }

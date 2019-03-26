@@ -1,6 +1,6 @@
 nav {
-    border-bottom: 1px solid rgb(187, 187, 187);
-    padding-bottom: 20px;
+    max-width: 960px;
+    margin: 15px auto;
 }
 
 .Header {
@@ -18,11 +18,191 @@ nav {
     border-bottom: 1px solid rgb(187, 187, 187);
 }
 
-.Search_text {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
- 
+/* Dropdown-conent styling */
+.User_status {
+    display: flex;
+    align-items: center;
+}
+.user_name {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+  
+.signed_in {
+    position: relative;
+    display: inline-block;
+}
+  
+.initial {
+    border-radius: 8px;
+    background: #dc0000;
+    color: white;
+    padding: 2px 8px 4px;
+    margin-right: 3px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: hidden;
+}
+  
+  .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+  }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #dc0000;
+    transition: 0.5s
+}
+  
+  .signed_in:hover .dropdown-content {
+    display: block;
+  }
+
+  /* logo styling */
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+.Logo a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#think {
+    border-radius: 5px;
+    background: #dc0000;
+    color: white;
+    padding: 3px 5px;
+}
+
+#forum {
+    color: black;
+    padding: 3px 2px;
+}
+
+/* signin + signup btn styling */
+.not_signed_in {
+    display: flex;
+    align-self: center;
+}
+
+.not_signed_in a {
+    text-decoration: none;
+    font-weight: 500;
+}
+#signup {
+    border-radius: 6px;
+    background: #dc0000;
+    color: white;
+    padding: 2px 15px 4px;
+    vertical-align: -webkit-baseline-middle;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#signup:hover {
+    opacity: 1;
+}
+
+#signin {
+    color: black;
+    padding: 2px 6px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#signin:hover {
+    color: #dc0000;
+    transition: 0.5s;
+}
+
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        max-width: 80vw;
+        margin: 15px auto;
+    }   
+
+    .Search_text {
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    nav {
+        max-width: 90vw;
+        margin: 12px auto;
+    }
+
+    .Logo a{
+        font-size: 1.2rem;
+    }
+
+    .User_status{
+        font-size: 0.9rem;
+    }
+
+    .Search_text {
+        width: 220px;
+      }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .Header{
+        flex-wrap:wrap;
+        height: 100%;
+      }
+    nav {
+        max-width: 95vw;
+        margin: 10px auto;
+    }
+
+    .Logo a{
+        font-size: 1.2rem;
+    }
+    
+    .Logo {
+        width: 50%
+    }
+    .User_status {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        font-size: 0.9rem;
+    }
+
+    .Search_field {
+        width: 100%;
+        order: 3;
+        margin-top: 8px;
+    }
+
+    .Search_text {
+        padding:4px 15px 4px 30px;
+        margin:3px; 
+        border-radius:15px; 
+        -moz-border-radius:15px; 
+        -webkit-border-radius:15px; 
+        background-color: white;
+        background-image: url('../../images/icons8-search-60.png');
+        background-position: 5px 3px; 
+        background-repeat: no-repeat;
+        background-size: 20px;
+        width: 95vw;
+      }
+    
 }

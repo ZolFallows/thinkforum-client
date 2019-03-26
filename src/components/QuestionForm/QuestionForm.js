@@ -25,7 +25,7 @@ export default class SigninForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-          value: "hello world",
+          value: "Type...",
           tab: 'write',
           error: null,
           tags: [{id: "general", text: "general" }, {id: "interview", text: "interview" }],
@@ -119,7 +119,7 @@ export default class SigninForm extends Component {
                     {error && <p className='red'>{error}</p>}
                 </div>
                 <Input 
-                    title='Title'
+                    title='Create a new discussion'
                     name='title'
                     type='text'
                     id='Form_title'
@@ -144,9 +144,9 @@ export default class SigninForm extends Component {
                     selectedTab={this.state.tab}
                 />
                 <Button 
-                    title='Submit' 
+                    title='Post discussion' 
                     type='submit'
-                    className='New_question_btn' 
+                    className='New_question_submit_btn' 
                 />
             </form>
         )

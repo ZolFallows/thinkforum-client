@@ -6,6 +6,7 @@ import ReactMde from "react-mde";
 import Showdown from "showdown";
 import "react-mde/lib/styles/css/react-mde-all.css";
 import "draft-js/dist/Draft.css";
+import './AnswerForm.css'
 
 export default class AnswerForm extends Component {
     static contextType = QuestionContext
@@ -73,7 +74,7 @@ export default class AnswerForm extends Component {
                     selectedTab={this.state.tab}
                 />
                 <Button 
-                    title='Submit' 
+                    title='reply' 
                     type='submit'
                     className='New_answer_btn' 
                 />

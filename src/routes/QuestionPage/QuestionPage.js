@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import QuestionContext from '../../contexts/QuestionContext'
 import QuestionApiService from '../../services/question-api-service'
-
 import QuestionItem from '../../components/QuestionItem/QuestionItem'
 import AnswerListItem from '../../components/AnswerListItem/AnswerListItem'
 import AnswerForm from '../../components/AnswerForm/AnswerForm'
+import './QuestionPage.css'
 
 export default class QuestionPage extends Component {
 
@@ -42,11 +42,13 @@ export default class QuestionPage extends Component {
         const { question, answers } = this.context
         return  <>
                     <QuestionItem question={question} />
-                    {answers
-                        .map(answer => 
-                            <AnswerListItem key={answer.id} answer={answer}/>
-                        )
-                    }
+                    <div className="AnswerList">
+                        {answers.map(answer => 
+                                    <AnswerListItem key={answer.id} answer={answer}/>
+                                )
+                        }
+                    </div>
+ 
                     <AnswerForm onAddAnswerValid={this.handleAddAnswerValid}/>
                 </>
     }

@@ -40,9 +40,10 @@ export default class QuestionListPage extends Component {
 
       renderNewQuestionButton(){
           return (<div className="List_header">
-                    <h5>Discussions</h5>
+                    <h3>Discussions</h3>
+                    {this.state.isSignIn ? <p className="signin_msg">Please sign in to post new discussion!</p> : ''}
                     <Button
-                        title='Ask Question'
+                        title='Create discussion'
                         className='New_question_btn'
                         type="button"
                         onClick={this.handleNewQuestion}
@@ -81,7 +82,6 @@ export default class QuestionListPage extends Component {
         return (
             <section className='QuestionListPage'>
                 {this.renderNewQuestionButton()}
-                {this.state.isSignIn ? <p className="error">Please sign in to post new discussion!</p> : ''}
                 {error ? <p className='error'>There was an error, try again</p>
                 : this.renderQuestions()}
             </section>

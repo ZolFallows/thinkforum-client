@@ -1,0 +1,56 @@
+.List_header > h3{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.Question_list {
+    border: 1px solid #ececec;
+    margin: 18px 0;
+}
+
+.User_info {
+    padding: 10px;
+    border: 1px solid #ececec;
+}
+
+h2, h3, p {
+    margin: 5px 0;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user_detail {
+    font-size: 1rem;
+}
+
+.date_created  {
+    display: flex;
+    align-self: flex-end;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.blank {
+    color: grey;
+    font-style: italic;
+}
+
+.edit_link {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    color: rgb(0, 0, 141);
+    font-weight: 500;
+}
+
+.edit_link:hover, .edit_link:focus {
+    color: rgb(6, 6, 197);
+    transition: ease-in-out 0.3s
+}

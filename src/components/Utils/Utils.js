@@ -22,10 +22,6 @@ export function Textarea({ className, ...props }) {
     )
 }
 
-// export function NewQuestion(props){
-//     return <button {...props}/>
-// }
-
 export function Button(props) {
     return <button {...props}>{props.title}</button>
 }

@@ -1,0 +1,27 @@
+.Answer_box {
+    margin-top: 5px;
+    border: 1px solid #ececec;
+}
+
+.Answer_header {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+    background: #ececec;
+    /* font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;  */
+}
+
+.Answer_header .full_name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.Answer_box .text {
+    padding: 5px;
+}

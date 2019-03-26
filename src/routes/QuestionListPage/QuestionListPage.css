@@ -1,10 +1,92 @@
 .QuestionListPage {
-    border: 1px solid grey;
-    margin: 20px 0;
+    border: 1px solid #ececec;
+    margin: 18px 0;
 }
 
 .List_header {
+    padding: 5px 10px;
+    background: #f8f8f8;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+.List_header .New_question_btn {
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 1px solid #ececec;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.New_question_btn:hover, .New_question_btn:focus{
+    background: #f8f8f8;
+    transition: ease-out 0.5s;
+}
+
+.List_header > h3{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.signin_msg {
+    color: gray;
+    font-size: 0.8rem;
+    display: flex;
+    align-self: center;
+    margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .List_header > h3{
+        font-size: 0.9rem;
+    }
+    .signin_msg {
+        font-size: 0.7rem;
+    }
+  }
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    .List_header > h3{
+        font-size: 0.9rem;
+    }
+    .signin_msg {
+        font-size: 0.7rem;
+    }
+
+    .List_header{
+        flex-wrap:wrap;
+        height: 100%;
+    }
+
+    .signin_msg {
+        width: 100%;
+        order: 3;
+    }
+
+}
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .List_header > h3{
+        font-size: 0.9rem;
+    }
+    .signin_msg {
+        font-size: 0.7rem;
+    }
+    
+    .List_header{
+        flex-wrap:wrap;
+        height: 100%;
+    }
+
+    .signin_msg {
+        width: 100%;
+        order: 3;
+    }
+  
+  }

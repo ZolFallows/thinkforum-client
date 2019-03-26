@@ -26,21 +26,21 @@ export default class QuestionListItem extends Component {
                 </h3>
                 {TokenService.hasAuthToken() && isUser
                     && TokenService.readJwtToken().user_id === question.user.id
-                    ? <button className="delete" onClick={() => this.props.handleDelete(question.id)}>Delete</button>
-                    : <p>
+                    ? <button className="delete_btn" onClick={() => this.props.handleDelete(question.id)}>Delete</button>
+                    : <p className="user_name">
                         <span><Link to={`/user/${question.user.id}`}>{question.user.full_name}</Link></span> 
-                        {' - '} 
+                        &nbsp;&nbsp;
                         <span>{question.user.user_name}</span>
                       </p>
                 }
-                <div>
+                <div className="discussion_info">
                     <div className="Tags">
                             {question.tags.split(',').map(tag => <span key={tag} className="tag">{tag} </span>)}
                     </div>
                     <div>
                         <span><Moment fromNow>{question.date_created}</Moment></span>
-                        {' - '}
-                        <span>{question.number_of_answers}respond(s)</span>
+                        &nbsp;&nbsp;&nbsp;
+                        <span>{question.number_of_answers}&nbsp;respond(s)</span>
                     </div>
                 </div>
             </div>
