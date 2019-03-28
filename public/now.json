@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "alias": "thinkfulforum",
-    "name": "thinkfulforum-app",
+    "alias": "thinkforum",
+    "name": "thinkforum-app",
     "routes": [
         {
           "src": "^/static/(.*)",

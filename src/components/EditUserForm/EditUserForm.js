@@ -69,7 +69,7 @@ export default class EditUserForm extends Component {
                     name='full_name'
                     type='text'
                     id='Signup_full_name'
-                    defaultValue={user.full_name}
+                    defaultValue={user ? user.full_name : ''}
                     placeholder={"Enter your full Name"}
                     required
                 />

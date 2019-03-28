@@ -12,8 +12,7 @@ export default class AnswerListItem extends Component {
         })
       }
 
-    render(){
-        const { answer } = this.props
+    renderAnswer(answer){
         return (
             <div className="Answer_box">
                 <div className="Answer_header">
@@ -25,5 +24,11 @@ export default class AnswerListItem extends Component {
                 </div>
             </div>
         )
+    }
+
+    render(){
+        const { answer } = this.props
+        // console.log(parse(this.converter.makeHtml(answer.text)))
+        return <>{answer ? this.renderAnswer(answer) : ''}</>
     }
 }

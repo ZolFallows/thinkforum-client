@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionListItem Component renders empty given no QuestionListItem without errors 1`] = `<Fragment />`;
+
+exports[`QuestionListItem Component renders given QuestionListItem without errors 1`] = `
+<Fragment>
+  <div
+    className="Question_group"
+  >
+    <h3>
+      <Link
+        replace={false}
+        to="/questions/2"
+      >
+        Another discussion
+      </Link>
+    </h3>
+    <p
+      className="user_name"
+    >
+      <span>
+        <Link
+          replace={false}
+          to="/user/2"
+        >
+          Bodeep Deboop
+        </Link>
+      </span>
+        
+      <span>
+        b.deboop
+      </span>
+    </p>
+    <div
+      className="discussion_info"
+    >
+      <div
+        className="Tags"
+      >
+        <span
+          className="tag"
+          key="javascript"
+        >
+          javascript
+           
+        </span>
+        <span
+          className="tag"
+          key="react"
+        >
+          react
+           
+        </span>
+      </div>
+      <div>
+        <span>
+          <t
+            ago={false}
+            calendar={false}
+            decimal={false}
+            element="time"
+            filter={[Function]}
+            fromNow={true}
+            interval={60000}
+            onChange={[Function]}
+            titleFormat=""
+            toNow={false}
+            unit={null}
+            unix={false}
+            utc={false}
+            withTitle={false}
+          >
+            2019-03-27T20:27:19.481Z
+          </t>
+        </span>
+           
+        <span>
+          1
+           respond(s)
+        </span>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;

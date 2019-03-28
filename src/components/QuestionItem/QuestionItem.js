@@ -14,10 +14,7 @@ export default class QuestionItem extends Component {
         })
       }
 
-    render() {
-        const { question } = this.props
-        // console.log(question)
-        // const content = parse(this.converter.makeHtml(question.content)).find(img => )
+    renderQuestion(question) {
         return (
             <div className="Question_box">
                 <div className="User">
@@ -43,7 +40,14 @@ export default class QuestionItem extends Component {
                     </div>
                 </div>
             </div>
-
         )
+    }
+
+    render() {
+        const { question } = this.props
+        return (<>
+                    {question ? this.renderQuestion(question) : ''}
+                </>
+          )
     }
 }

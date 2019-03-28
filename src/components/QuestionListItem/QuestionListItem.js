@@ -6,19 +6,7 @@ import './QuestionListItem.css'
 
 export default class QuestionListItem extends Component {
 
-    // renderToggleDelete(question) {
-    //     const payload = TokenService.readJwtToken()
-    //     return TokenService.hasAuthToken() && Number(payload.user_id) === Number(question.user.id) 
-    //                 ? <div className="delete" onClick={this.handleDeleteQuestion}>Delete</div>
-    //                 : <p>
-    //                     <span><Link to={`/user/${question.user.id}`}>{question.user.full_name}</Link></span> 
-    //                     {' - '} 
-    //                     <span>{question.user.user_name}</span>
-    //                   </p>
-    // }
-
-    render(){
-        const { question, isUser } = this.props
+    renderQuestion(question, isUser){
         return (
             <div className="Question_group">
                 <h3>
@@ -31,7 +19,7 @@ export default class QuestionListItem extends Component {
                         <span><Link to={`/user/${question.user.id}`}>{question.user.full_name}</Link></span> 
                         &nbsp;&nbsp;
                         <span>{question.user.user_name}</span>
-                      </p>
+                    </p>
                 }
                 <div className="discussion_info">
                     <div className="Tags">
@@ -45,5 +33,10 @@ export default class QuestionListItem extends Component {
                 </div>
             </div>
         )
+    }
+
+    render(){
+        const { question, isUser } = this.props
+        return <>{question ? this.renderQuestion(question, isUser) : ''}</>
     }
 }

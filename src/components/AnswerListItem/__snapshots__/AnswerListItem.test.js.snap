@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnswerListItem Component renders empty given no AnswerListItem without errors 1`] = `<Fragment />`;
+
+exports[`AnswerListItem Component renders given AnswerListItem without errors 1`] = `
+<Fragment>
+  <div
+    className="Answer_box"
+  >
+    <div
+      className="Answer_header"
+    >
+      <p
+        className="full_name"
+      >
+        Charlie Bloggs
+      </p>
+      <p
+        className="date_created"
+      >
+        <t
+          ago={false}
+          calendar={false}
+          decimal={false}
+          element="time"
+          filter={[Function]}
+          fromNow={true}
+          interval={60000}
+          onChange={[Function]}
+          titleFormat=""
+          toNow={false}
+          unit={null}
+          unix={false}
+          utc={false}
+          withTitle={false}
+        >
+          2019-03-27T20:27:19.481Z
+        </t>
+      </p>
+    </div>
+    <div
+      className="text"
+    >
+      <p>
+        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+      </p>
+    </div>
+  </div>
+</Fragment>
+`;
