@@ -13,16 +13,25 @@ The app provides users with the following functions:
 
 ⋅⋅* Create new account
 ⋅⋅* Sing in for returning users
-⋅⋅* Update user profile page and delete disccussions 
-⋅⋅* Access discussion threads and be able to reply/comment 
+⋅⋅* Edit the user profile and delete disccussions 
+⋅⋅* Create new discussion
+⋅⋅* Access and reply/comment discussion threads 
 ⋅⋅* Integrated search feature for discussions via title/topic
-⋅⋅*
-⋅⋅*
-
 
 # Technology
 ##Front-end
 
+⋅⋅* HTML5
+⋅⋅* CSS
+⋅⋅* JavaScript
+⋅⋅* React
+⋅⋅* React-Context
+⋅⋅* showdown, draft-js, html-react-parser, jwt-decode, react-tag-input, moment.js
+
 ##Back-end
 
+⋅⋅* [Thinkful-Api](https://github.com/ZolFallows/thinkforum-server)
+
 ##Testing
+
+⋅⋅* Enzyme
