@@ -25,10 +25,10 @@ export default class SigninForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-          value: "Type...",
+          value: "Summarise your discussion here..",
           tab: 'write',
           error: null,
-          tags: [{id: "general", text: "general" }, {id: "interview", text: "interview" }],
+          tags: [{id: "general", text: "general" }],
           suggestions: TAGS,
         }
         this.converter = new Showdown.Converter({

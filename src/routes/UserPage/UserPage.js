@@ -44,7 +44,7 @@ export default class UserPage extends Component {
     render() {
         const { userId } = this.props.match.params
 
-    return (
+        return (
             <div>
                 <div className="User_info">
                     <UserProfile userId={ userId } />
