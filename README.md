@@ -19,7 +19,7 @@ The app provides users with the following functions:
 * Integrated search feature for discussions via title/topic
 
 # Technology
-##Front-end
+## Front-end
 
 * HTML5
 * CSS
@@ -28,10 +28,10 @@ The app provides users with the following functions:
 * React-Context
 * showdown, draft-js, html-react-parser, jwt-decode, react-tag-input, moment.js
 
-##Back-end
+## Back-end
 
 * [Thinkful-Api](https://github.com/ZolFallows/thinkforum-server)
 
-##Testing
+## Testing
 
 * Enzyme
