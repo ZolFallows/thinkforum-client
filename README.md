@@ -3,10 +3,10 @@
 
 [ThinkForum](https://thinkforum.now.sh/) is the client side of a full stack React application for 
 exchanging ideas and views on any particular issues through form of posted messages/discussions. 
-The main inspiration behind the app was to provide a simple and intresting app for ThinkFul 
+The main inspiration behind the app was to provide a simple and interesting app for ThinkFul 
 students to create descussions in more orginised manner.
 
-![Landing page](/screenshots/lading-page.png "Landing page")
+![Landing page](./screenshots/lading-page.png "Landing page")
 ## What does the app do
 
 The app provides users with the following functions:
