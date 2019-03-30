@@ -7,16 +7,16 @@ The main inspiration behind the app was to provide a simple and interesting app 
 students to create descussions in more orginised manner.
 
 
-### Landing page
+#### Landing page
 ![alt text](screenshots/landing-page.png "Landing page")
 
-### Discussion page
+#### Discussion page
 ![alt text](screenshots/discussion-page.png "Discussion page")
 
-### Create new discussion form page
+#### Create new discussion form page
 ![alt text](screenshots/discussion-form-page.png "Discussion form")
 
-### User profile page
+#### User profile page
 ![alt text](screenshots/profile-page.png "Profile page")
 
 ## What does the app do

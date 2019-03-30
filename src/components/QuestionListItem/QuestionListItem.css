@@ -55,7 +55,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
     .discussion_info {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         display: flex;
         flex-direction: column;
     }

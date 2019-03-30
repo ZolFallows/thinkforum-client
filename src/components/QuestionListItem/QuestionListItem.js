@@ -25,10 +25,10 @@ export default class QuestionListItem extends Component {
                     <div className="Tags">
                             {question.tags.split(',').map(tag => <span key={tag} className="tag">{tag} </span>)}
                     </div>
-                    <div>
+                    <div className="date_number">
                         <span><Moment fromNow>{question.date_created}</Moment></span>
                         &nbsp;&nbsp;&nbsp;
-                        <span>{question.number_of_answers}&nbsp;respond(s)</span>
+                        <span >{question.number_of_answers}&nbsp;respond(s)</span>
                     </div>
                 </div>
             </div>

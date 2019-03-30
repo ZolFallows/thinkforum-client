@@ -29,8 +29,13 @@ code {
 
 @media (min-width: 320px) and (max-width: 480px) {
     .Question_info {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .date_number {
+        padding-top: 8px;
+        color: grey;
     }
 }
