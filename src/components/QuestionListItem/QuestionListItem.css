@@ -52,3 +52,11 @@
     color: black;
     font-weight: 700;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .discussion_info {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

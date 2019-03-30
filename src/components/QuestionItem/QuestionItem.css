@@ -26,3 +26,11 @@ code {
     font-size: 0.8rem;
     color: grey;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .Question_info {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
