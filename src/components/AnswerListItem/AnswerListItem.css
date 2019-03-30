@@ -25,3 +25,7 @@
 .Answer_box .text {
     padding: 5px;
 }
+
+.Answer_box .text img {
+    max-width: 80%;
+}
