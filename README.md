@@ -6,7 +6,7 @@ exchanging ideas and views on any particular issues through form of posted messa
 The main inspiration behind the app was to provide a simple and interesting app for ThinkFul 
 students to create descussions in more orginised manner.
 
-![alt text](thinkforum-client/screenshots/landing-page.png "Landing page")
+![alt text](screenshots/landing-page.png "Landing page")
 
 ## What does the app do
 
