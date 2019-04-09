@@ -19,7 +19,6 @@ const QuestionApiService = {
                         headers:  {'Authorization': `Bearer ${TokenService.getAuthToken()}`},
                 })
                 .then(res => {
-                    // console.log(res)
                     return (!res.ok) 
                             ? res.json().then(error => Promise.reject(error))
                             : res.json() 

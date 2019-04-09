@@ -27,7 +27,6 @@ export default class UserProfile extends Component {
     }
 
     render(){
-        // console.log(this.props.userId)
         const { user, error } = this.context
         const payload = TokenService.readJwtToken()
         let content

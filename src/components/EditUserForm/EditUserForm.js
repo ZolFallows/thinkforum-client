@@ -19,8 +19,6 @@ export default class EditUserForm extends Component {
         const { full_name, title, location, content } = e.target
         const { userId }= this.props
         this.setState({error: null})
-        console.log(full_name.value, title.value, location.value, content.value)
-        console.log(userId)
         UsersApiService
             .updateUserById(userId, {
                 full_name: full_name.value,
@@ -35,25 +33,10 @@ export default class EditUserForm extends Component {
                 content.value = ''
                 this.context.updateUser(res)
                 this.props.onUpdateValid()
-                console.log(res)
             })
             .catch(res => {
                 this.setState({error: res.error})
-            })
-            // .postSignup({
-            //     full_name: full_name.value,
-            //     user_name: user_name.value,
-            //     password: new_password.value
-            // })
-            // .then(res=> {
-            //     full_name.value = ''
-            //     user_name.value = ''
-            //     new_password.value = ''
-            //     this.props.onSignupValid()
-            // })
-            // .catch(res => {
-            //     this.setState({error: res.error})
-            // })    
+            })   
     }
 
     render(){

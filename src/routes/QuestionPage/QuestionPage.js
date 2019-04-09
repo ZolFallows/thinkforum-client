@@ -12,7 +12,7 @@ export default class QuestionPage extends Component {
 
     componentDidMount() {
         const { questionId } = this.props.match.params
-        // console.log(questionId)
+    
         // clear error 
         this.context.clearError()
         // fetch and update state with question

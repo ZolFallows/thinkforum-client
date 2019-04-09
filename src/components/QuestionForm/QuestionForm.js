@@ -37,12 +37,6 @@ export default class SigninForm extends Component {
         })
       }
 
-    // state = {
-    //     error: null,
-    //     tags: [{id: "general", text: "general" }, {id: "interview", text: "interview" }],
-    //     suggestions: TAGS,
-    // }
-
     // ======== markdown editor ========
     handleTabChange = tab => {
         this.setState({ tab });
@@ -93,9 +87,6 @@ export default class SigninForm extends Component {
         const tags = this.state.tags.map(tag => tag.text)
         const content = this.state.value 
         const { title } = e.target
-        console.log('title:', title.value)
-        console.log('tags:', tags)
-        console.log('MDE:', content)
 
         QuestionApiService
             .postQuestion(title.value, content, tags)

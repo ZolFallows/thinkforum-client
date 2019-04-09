@@ -40,13 +40,11 @@ export default class AnswerForm extends Component {
         this.setState({error: null})
         const { question } = this.context
         const text = this.state.value
-        // const { text } = e.target
 
         QuestionApiService
             .postAnswer(question.id, text)
             .then(res => {
                 this.setState({value: ''})
-                console.log(res)
                 this.context.addAnswer(res)
             })
             .catch(this.context.setError)

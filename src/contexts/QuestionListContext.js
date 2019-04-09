@@ -24,7 +24,6 @@ export class QuestionListProvider extends Component {
     }
 
     setQuestionList = questionList => {
-        // console.log(questionList)
         this.setState({ questionList })
     }
 
@@ -33,12 +32,11 @@ export class QuestionListProvider extends Component {
     }
 
     setShowSearchBar = show => {
-        // console.log(show)
+
         this.setState({showSearchBar: show})
     }
 
     setError = error => {
-        // console.error(error)
         this.setState({ error })
     }
 

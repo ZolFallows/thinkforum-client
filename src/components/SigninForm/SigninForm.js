@@ -13,7 +13,6 @@ export default class SigninForm extends Component {
         e.preventDefault();
         this.setState({error: null})
         const { user_name, password } = e.target
-        // console.log(user_name.value, password.value)
         AuthApiService.postSignin({
                 user_name: user_name.value,
                 password: password.value

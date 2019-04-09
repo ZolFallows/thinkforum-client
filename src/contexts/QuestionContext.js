@@ -25,7 +25,7 @@ export class QuestionProvider extends Component {
     }
 
     setError = error => {
-        console.error(error)
+        // console.error(error)
         this.setState({ error })
     }
     
@@ -34,7 +34,6 @@ export class QuestionProvider extends Component {
     }
 
     setQuestion = question => {
-        // console.log(question)
         this.setState({ question })
     }
 
@@ -43,7 +42,6 @@ export class QuestionProvider extends Component {
     }
 
     setAnswers = answers => {
-        // console.log(answers)
         this.setState({answers})
     }
 
@@ -59,8 +57,6 @@ export class QuestionProvider extends Component {
     }
 
     render(){
-        // console.log(this.state.question)
-        // console.log(this.state.answers)
         const contextValue = {
             question: this.state.question,
             answers: this.state.answers,

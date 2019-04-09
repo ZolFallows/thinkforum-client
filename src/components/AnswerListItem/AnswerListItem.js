@@ -28,7 +28,6 @@ export default class AnswerListItem extends Component {
 
     render(){
         const { answer } = this.props
-        // console.log(parse(this.converter.makeHtml(answer.text)))
         return <>{answer ? this.renderAnswer(answer) : ''}</>
     }
 }

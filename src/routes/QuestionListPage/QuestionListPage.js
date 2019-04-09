@@ -54,7 +54,7 @@ export default class QuestionListPage extends Component {
 
     renderQuestions() {
         let { questionList = [] } = this.context
-        // console.log(questionList)
+     
         if(this.context.searchTerm !== ''){
             let search = this.context.searchTerm.toLocaleLowerCase()
             questionList = questionList.filter(question => question.title
