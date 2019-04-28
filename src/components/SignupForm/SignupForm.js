@@ -25,14 +25,27 @@ export default class SignupForm extends Component {
                 password: new_password.value
             })
             .then(res=> {
+                this.handleSignin(user_name.value, new_password.value)
                 full_name.value = ''
                 user_name.value = ''
                 new_password.value = ''
-                this.props.onSignupValid()
             })
             .catch(res => {
                 this.setState({error: res.error})
             })    
+    }
+
+    handleSignin = (user_name, password) => {
+        AuthApiService.postSignin({
+            user_name,
+            password
+        })
+        .then(res => {
+            this.props.onSignupValid()
+        })
+        .catch(res => {
+            this.setState({ error: res.error})
+        })
     }
 
     render() {

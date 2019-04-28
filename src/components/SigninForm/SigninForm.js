@@ -28,6 +28,19 @@ export default class SigninForm extends Component {
         
     }
 
+    handleDemoLogin = () => {
+        AuthApiService.postSignin({
+            user_name: 'demo',
+            password: 'password'
+        })
+        .then(res => {
+            this.props.onSigninValid()
+        })
+        .catch(res => {
+            this.setState({ error: res.error})
+        })
+    }
+
     render() {
         const { error } = this.state
         return (
@@ -49,11 +62,19 @@ export default class SigninForm extends Component {
                     id='Signin_user_password'
                     placeholder={"Password..."}
                 />
-                <Button
-                    title='Sign In' 
-                    type='submit'
-                    className='Signin_btn' 
-                />
+                <div className="sign-btns">
+                    <Button
+                        title='Sign In' 
+                        type='submit'
+                        className='Signin_btn' 
+                    />                
+                    <Button
+                        onClick={this.handleDemoLogin}
+                        title='*Demo' 
+                        type='button'
+                        className='Demo_btn' 
+                    />
+                </div>
             </form>
         )
     }

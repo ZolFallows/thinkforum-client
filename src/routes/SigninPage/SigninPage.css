@@ -14,10 +14,10 @@
     font-weight: 500;
 }
 
-.Signin_btn {
+.Signin_btn, .Demo_btn {
     display: flex;
     align-self: center;
-    margin: 20px auto 10px;
+    margin: 5px;
     color: white;
     background: #4C8FFB;
     border: 1px #3079ED solid;
@@ -25,13 +25,19 @@
 }
 
 
-.Signin_btn:hover {
+.Signin_btn:hover, .Demo_btn:hover {
     border: 1px #2F5BB7 solid;
     box-shadow: 0 1px 1px #EAEAEA, inset 0 1px 0 #5A94F1;
     background: #3F83F1;
 }
 
-.Signin_btn:active {
+.Signin_btn:active, .Demo_btn:active {
     box-shadow: inset 0 2px 5px #2370FE;   
+}
+
+.sign-btns{
+    display: flex;
+    justify-content: center;
+    margin: 18px;
 }
 

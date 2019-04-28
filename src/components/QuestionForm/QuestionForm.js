@@ -115,6 +115,7 @@ export default class SigninForm extends Component {
                     type='text'
                     id='Form_title'
                     placeholder={'What is your question?'}
+                    maxLength="180"
                     required
                 />
                 <ReactTags
@@ -133,6 +134,7 @@ export default class SigninForm extends Component {
                     Promise.resolve(this.converter.makeHtml(markdown))
                     }
                     selectedTab={this.state.tab}
+                    // textAreaProps={}
                 />
                 <Button 
                     title='Post discussion' 
