@@ -4,7 +4,7 @@ import './SignupPage.css'
 export default class SignupPage extends Component {
     
     handleSignupValid = () => {
-        this.props.history.push('/signin')
+        this.props.history.push('/')
     }
 
     render(){
