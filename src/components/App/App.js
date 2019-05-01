@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-
 import TokenService from '../../services/token-service'
 import AuthApiService from '../../services/auth-api-service'
 import IdleService from '../../services/idle-service'
-
 import PrivateRoute from '../Utils/PrivateRoute'
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute'
-
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import QuestionListPage from '../../routes/QuestionListPage/QuestionListPage'
